@@ -2,7 +2,7 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="in"
+<instance-profile id="cnw"
                  name="计算机网络"
                  start-page="starter.md">
 
@@ -86,7 +86,7 @@
             <toc-element topic="chapter-06-06.md"/>
             <toc-element topic="chapter-06-07.md"/>
             <toc-element topic="chapter-06-08.md"/>
-            <toc-element topic="6-9-网络管理系统逻辑模型.md"/>
+            <toc-element topic="chapter-06-09.md"/>
             <toc-element topic="chapter-06-10.md"/>
             <toc-element topic="chapter-06-11.md"/>
             <toc-element topic="chapter-06-12.md"/>

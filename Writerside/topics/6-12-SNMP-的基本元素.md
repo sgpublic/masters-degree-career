@@ -1,3 +1,0 @@
-# 6.12 SNMP 的基本元素
-
-Start typing here...
