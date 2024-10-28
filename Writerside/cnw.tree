@@ -92,5 +92,12 @@
             <toc-element topic="chapter-06-12.md"/>
             <toc-element topic="chapter-06-13.md"/>
         </toc-element>
+        <toc-element topic="chapter-07.md">
+            <toc-element topic="chapter-07-01.md"/>
+            <toc-element topic="chapter-07-02.md"/>
+        </toc-element>
+        <toc-element topic="chapter-09.md">
+            <toc-element topic="chapter-09-01.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>
