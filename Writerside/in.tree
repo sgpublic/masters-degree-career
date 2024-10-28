@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="计算机网络"
+                 start-page="starter.md">
+
+    <toc-element topic="starter.md">
+        <toc-element topic="chapter-01.md">
+            <toc-element topic="chapter-01-01.md"/>
+            <toc-element topic="chapter-01-02.md"/>
+            <toc-element topic="chapter-01-03.md"/>
+            <toc-element topic="chapter-01-04.md"/>
+            <toc-element topic="chapter-01-05.md"/>
+            <toc-element topic="chapter-01-06.md"/>
+            <toc-element topic="chapter-01-07.md"/>
+        </toc-element>
+        <toc-element topic="chapter-02.md">
+            <toc-element topic="chapter-02-01.md"/>
+            <toc-element topic="chapter-02-02.md"/>
+            <toc-element topic="chapter-02-03.md"/>
+            <toc-element topic="chapter-02-04.md"/>
+            <toc-element topic="chapter-02-05.md"/>
+            <toc-element topic="chapter-02-06.md"/>
+            <toc-element topic="chapter-02-07.md"/>
+        </toc-element>
+        <toc-element topic="chapter-03.md">
+            <toc-element topic="chapter-03-01.md"/>
+            <toc-element topic="chapter-03-02.md"/>
+            <toc-element topic="chapter-03-03.md"/>
+            <toc-element topic="chapter-03-04.md"/>
+            <toc-element topic="chapter-03-05.md"/>
+            <toc-element topic="chapter-03-06.md"/>
+            <toc-element topic="chapter-03-07.md"/>
+            <toc-element topic="chapter-03-08.md"/>
+            <toc-element topic="chapter-03-09.md"/>
+            <toc-element topic="chapter-03-10.md"/>
+            <toc-element topic="chapter-03-11.md"/>
+            <toc-element topic="chapter-03-12.md"/>
+            <toc-element topic="chapter-03-13.md"/>
+            <toc-element topic="chapter-03-14.md"/>
+            <toc-element topic="chapter-03-15.md"/>
+            <toc-element topic="chapter-03-16.md"/>
+            <toc-element topic="chapter-03-17.md"/>
+            <toc-element topic="chapter-03-18.md"/>
+            <toc-element topic="chapter-03-19.md"/>
+            <toc-element topic="chapter-03-20.md"/>
+        </toc-element>
+        <toc-element topic="chapter-04.md">
+            <toc-element topic="chapter-04-01.md"/>
+            <toc-element topic="chapter-04-02.md"/>
+            <toc-element topic="chapter-04-03.md"/>
+            <toc-element topic="chapter-04-04.md"/>
+            <toc-element topic="chapter-04-05.md"/>
+            <toc-element topic="chapter-04-06.md"/>
+            <toc-element topic="chapter-04-07.md"/>
+            <toc-element topic="chapter-04-08.md"/>
+            <toc-element topic="chapter-04-09.md"/>
+            <toc-element topic="chapter-04-10.md"/>
+            <toc-element topic="chapter-04-11.md"/>
+            <toc-element topic="chapter-04-12.md"/>
+            <toc-element topic="chapter-04-13.md"/>
+            <toc-element topic="chapter-04-14.md"/>
+        </toc-element>
+        <toc-element topic="chapter-05.md">
+            <toc-element topic="chapter-05-01.md"/>
+            <toc-element topic="chapter-05-02.md"/>
+            <toc-element topic="chapter-05-03.md"/>
+            <toc-element topic="chapter-05-04.md"/>
+            <toc-element topic="chapter-05-05.md"/>
+            <toc-element topic="chapter-05-06.md"/>
+            <toc-element topic="chapter-05-07.md"/>
+            <toc-element topic="chapter-05-08.md"/>
+        </toc-element>
+        <toc-element topic="chapter-06.md">
+            <toc-element topic="chapter-06-01.md"/>
+            <toc-element topic="chapter-06-02.md"/>
+            <toc-element topic="chapter-06-03.md"/>
+            <toc-element topic="chapter-06-04.md">
+                <toc-element topic="chapter-06-04-01.md"/>
+                <toc-element topic="chapter-06-04-02.md"/>
+                <toc-element topic="chapter-06-04-03.md"/>
+            </toc-element>
+            <toc-element topic="chapter-06-05.md"/>
+            <toc-element topic="chapter-06-06.md"/>
+            <toc-element topic="chapter-06-07.md"/>
+            <toc-element topic="chapter-06-08.md"/>
+            <toc-element topic="6-9-网络管理系统逻辑模型.md"/>
+            <toc-element topic="chapter-06-10.md"/>
+            <toc-element topic="chapter-06-11.md"/>
+            <toc-element topic="chapter-06-12.md"/>
+            <toc-element topic="chapter-06-13.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>
