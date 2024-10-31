@@ -1,6 +1,6 @@
 # 4.9 CIDR（P125 4.2.2）
 
-由于按类分配的 IP 地址存在浪费过多的情况，一种新的 IP 分配方式：**无分类域间路由选择 CIDR（Classless Inter-Domain Routing）**就诞生了。
+由于按类分配的 IP 地址存在浪费过多的情况，一种新的 IP 分配方式：**无分类域间路由选择 CIDR（Classless Inter-Domain Routing）** 就诞生了。
 
 CIDR 记法如下：
 $$

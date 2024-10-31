@@ -2,7 +2,7 @@
 
 （不太确定是不是指物理层的多路复用技术...）
 
-**复用（Multiplexing）**技术一般有以下几种：
+**复用（Multiplexing）** 技术一般有以下几种：
 
 + **码分复用 CDM（Code Division Multiplexing）**
 

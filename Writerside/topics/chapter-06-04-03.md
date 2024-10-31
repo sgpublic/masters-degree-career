@@ -79,13 +79,13 @@ HTTP/1.1 基于 TCP 协议。一个完整的 HTTP 报文通常包含以下几种
 
     + Allow：通常出现在响应头中，用于表明请求的 URI 允许的请求方法，若响应状态码为 405 则必须包含此字段。例如：
 
-      ```
+      ```http
       Allow: GET, HEAD
       ```
 
     + Accept-Charset/Accept-Encoding/Accept-Language：通常出现在请求头中，用于表明所期望响应的字符编码、内容编码、自然语言。例如：
 
-      ```
+      ```http
       Accept-Charset: UTF-8
       Accept-Encoding: gzip
       Accept-Language: zh-Hans
@@ -93,85 +93,85 @@ HTTP/1.1 基于 TCP 协议。一个完整的 HTTP 报文通常包含以下几种
 
     + Connection：HTTP/1.1 支持将多个 HTTP 请求放入同一个 TCP 连接中，此字段用于向服务器表明 HTTP 请求完成后的处理方式。例如请求后不要关闭连接：
 
-      ```
+      ```http
       Connection: Keep-Alive
       ```
 
     + Content-Language：用于表明 HTTP 报文主体所使用的自然语言。例如：
 
-      ```
+      ```http
       Content-Language: zh-Hans
       ```
 
     + Authorization：通常出现在请求头中，用于向服务器验证身份。例如使用 Basic 方式认证：
 
-      ```
+      ```http
       Authorization: Basic zsWxgaSGsSgaxG...
       ```
 
     + Content-Encoding：用于表明 HTTP 报文主体的编码类型。例如：
 
-      ```
+      ```http
       Content-Encoding: x-gzip
       ```
 
     + Content-Length：用于表明 HTTP 报文主体的长度，以字节为单位，表示为十进制数。例如：
 
-      ```
+      ```http
       Content-Length: 114514
       ```
 
     + Content-Type：用于表明 HTTP 报文主体的数据类型，与 MIME 所定义的相同。例如：
 
-      ```
+      ```http
       Content-Type: text/html
       ```
 
     + Host：通常出现在请求头中，HTTP/1.1 要求请求头中必须包含此字段，用于表明发起请求时所使用的主机名称。例如：
 
-      ```
+      ```http
       Host: www.w3.org
       ```
 
     + If-Modified-Since：通常出现在 GET 请求的请求头中，用于向服务器告知若指定的资源在指定的时间后有修改才返回内容，否则将返回 304。其中时间的格式遵循 RFC-822。例如：
 
-      ```
+      ```http
       If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT
       ```
 
     + Last-Modified：通常出现在响应头中，用于向客户端展示请求的资源上一次修改的时间。其中时间的格式遵循 RFC-822。例如：
 
-      ```
+      ```http
       Last-Modified: Tue, 15 Nov 1994 12:45:26 GMT
       ```
 
     + Location：通常出现在状态码为 301 或 302 的响应头中，用于表明该资源新的 URL。例如：
 
-      ```
+      ```http
       Location: http://www.w3.org/hypertext/WWW/NewLocation.html
       ```
 
     + Referer：通常出现在请求头中，当一个用户在浏览器中点击链接时，浏览器会在发出的请求中添加 Referer 头，包含原始页面的地址。例如：
 
-      ```
+      ```http
       Referer: http://www.w3.org/hypertext/DataSources/Overview.html
       ```
 
     + Server：通常出现在响应头中，用于标识服务器的软件信息。例如：
 
-      ```
+      ```http
       Server: nginx/1.20.1
       ```
 
     + User-Agent：通常出现在请求头中，用于标识发起请求的用户代理的信息。例如当用户使用 Edge 浏览器发起请求，则 User-Agent 通常为：
 
-      ```
+      ```http
       Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
       ```
 
     + WWW-Authenticate：通常出现在状态码为 401 的响应头中，用于向客户端表明身份验证所需要的方法。例如：
 
-      ```
+      ```http
        WWW-Authenticate: Basic realm="WallyWorld"
       ```
 

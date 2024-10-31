@@ -2,7 +2,7 @@
 
 ## 7.2.1 替代加密
 
-替代加密（Substitution Cipher）指将明文中每一种字符都替换为另一个字符的加密方式。
+**替代加密（Substitution Cipher）** 指将明文中每一种字符都替换为另一个字符的加密方式。
 
 例如：将文本中所有的 A 替换为 E、B 替换为 D...以此类推。
 
@@ -18,11 +18,11 @@
 
 ## 7.2.2 置换加密
 
-置换加密（Transposition Cipher）指按一定规律打乱明文中字符的顺序的加密方法。
+**置换加密（Transposition Cipher）** 指按一定规律打乱明文中字符的顺序的加密方法。
 
 常见方法：
 
-+ 列式置换（Columnar Transposition）：
++ 列式置换（Columnar Transposition）
 
   1. 将明文写入一个矩阵，按列读取字符进行加密。
 
@@ -33,7 +33,7 @@
      ```
   2. 然后按照某种顺序读取列，例如列的顺序为 3, 1, 4, 2, 5，生成密文：`LRHWLLEOOD`
 
-+ 行置换（Row Transposition）：
++ 行置换（Row Transposition）
 
   先将明文分成固定长度的行，然后重新排列这些行的顺序。
 

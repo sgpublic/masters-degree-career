@@ -16,7 +16,7 @@
 
 ## 4.14.1 地址解析协议 ARP（P133 4.2.4）
 
-**地址解析协议 ARP（Address Resolve Protocol）**用于在局域网中将 IPv4 地址解析为 MAC 地址。
+**地址解析协议 ARP（Address Resolve Protocol）** 用于在局域网中将 IPv4 地址解析为 MAC 地址。
 
 当局域网中一台主机需要获取另一个 IPv4 地址的主机的 MAC 地址时：
 

@@ -1,6 +1,6 @@
 # 6.8 URL 的格式（RFC-3986）
 
-**统一资源定位符 URL（Uniform Resource Locator）** 属于**统一资源标识符 URI（Uniform Resource Identifier）**的一种，下文以 URI 为目标描述，URL 格式完全符合 URI。
+**统一资源定位符 URL（Uniform Resource Locator）** 属于**统一资源标识符 URI（Uniform Resource Identifier）** 的一种，下文以 URI 为目标描述，URL 格式完全符合 URI。
 
 （[RFC-3986 3](https://datatracker.ietf.org/doc/html/rfc3986#section-3)）URI 格式示例如下：
 

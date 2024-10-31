@@ -1,6 +1,6 @@
 # 3.6 CSMA/CD 协议
 
-**载波监听多点接入/冲突检测 CSMA/CD（Carrier Sense Multiple Access with Collision Detection）**协议是早期总线型互联网广泛使用的访问控制协议，随着互联网的发展，CSMA/CD 协议已跟随总线型互联网的消失而一并消失了。
+**载波监听多点接入/碰撞检测 CSMA/CD（Carrier Sense Multiple Access with Collision Detection）** 是早期总线型互联网广泛使用的访问控制协议，随着互联网的发展，CSMA/CD 协议已跟随总线型互联网的消失而一并消失了。
 
 相关词条：
 

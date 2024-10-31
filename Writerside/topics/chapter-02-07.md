@@ -1,6 +1,6 @@
 # 2.7 PCM 的缺点
 
-**脉冲编码调制 PCM（Pulse Code Modulation）**是一种将模拟信号转换为数字信号的编码方法。
+**脉冲编码调制 PCM（Pulse Code Modulation）** 是一种将模拟信号转换为数字信号的编码方法。
 
 （P62 2.5）早期 PCM 最主要的缺点是以下两个：
 

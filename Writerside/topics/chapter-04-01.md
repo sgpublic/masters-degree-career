@@ -16,7 +16,7 @@
 
 + **服务异构性**
 
-  不同网络提供不同类型的服务，例如云计算、边缘计算、**内容分发网络 CDN（Content Delivery Network）**、**物联网 IoT（Internet of Things）**等。
+  不同网络提供不同类型的服务，例如云计算、边缘计算、**内容分发网络 CDN（Content Delivery Network）**、**物联网 IoT（Internet of Things）** 等。
 
 + **拓扑结构异构性**
 

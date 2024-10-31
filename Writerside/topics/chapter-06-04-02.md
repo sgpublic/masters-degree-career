@@ -71,7 +71,7 @@ MIME 的首部包括：
 
 例如：
 
-```
+```http
 MIME-Version: 1.0
 From: sender@example.com
 To: recipient@example.com

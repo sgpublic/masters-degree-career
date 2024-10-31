@@ -1,10 +1,12 @@
 # 4.6 IP 地址的分类及其表示
 
+本节中“IP 地址”均指**IPv4 地址**。
+
 ## 4.6.1 IP 地址机器表示方法（P123 4.2.2）
 
-IP 地址现由**互联网名字和数字分配机构 ICANN（Internet Corporation for Assigned Names and Numbers）**进行分配。
+IP 地址现由**互联网名字和数字分配机构 ICANN（Internet Corporation for Assigned Names and Numbers）** 进行分配。
 
-IP 地址使用**点分十进制记法（Dotted Decimal Notation）**书写。例如：$128.11.3.31$。
+IP 地址使用**点分十进制记法（Dotted Decimal Notation）** 书写。例如：$128.11.3.31$。
 
 IP 地址在整个互联网上是唯一的。
 
