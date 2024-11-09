@@ -4,7 +4,7 @@
 
 | Destination MAC Address | Source MAC Address | EtherType | Frame Payload (Data) | Frame Check Sequence (FCS) |
 |-------------------------|--------------------|-----------|----------------------|----------------------------|
-| 6 bits                  | 6 bits             | 2 bits    | *                    | 4 bits                     |
+| 6 bytes                 | 6 bytes            | 2 bytes   | *                    | 4 bytes                    |
 
 其中：
 
@@ -19,6 +19,14 @@
 + 类型（EtherType）
 
    长度 **2 字节**。标识数据部分使用的**协议类型**。
+
+  | 协议名称 | 协议字段值（10 进制） | 协议字段值（16 进制） |
+  |------|--------------|--------------|
+  | IPv4 | 2048         | 0x0800       |
+  | ARP  | 2054         | 0x0806       |
+  | IPv6 | 34525        | 0x86dd       |
+  | VLAN | 33024        | 	0x8100      |
+  | ...  |              |              |
 
 + 数据（Data）
 
