@@ -5,11 +5,11 @@
 相关词条：
 
 + **标签交换路由器 LSR（Label Switching Router）**：MPLS 需要路由器硬件支持，支持 MPLS 的路由器称为 LSR。
-+ **MPLS 域**：由 LSR 组成的网络称为 MPLS 域。
-+ **标签边缘路由器 LER（Label Edge Router）**：即 MPLS 域边缘的路由器，IP 数据报通过 LER 进入和离开 MPLS 域。
++ **MPLS 域**：由标签交换路由器组成的网络称为 MPLS 域。
++ **标签边缘路由器 LER（Label Edge Router）**：即 MPLS 域边缘的路由器，IP 数据报通过标签边缘路由器进入和离开 MPLS 域。
 + **标签分配协议 LDP（Label Distribution Protocol）**：用于在 MPLS 域中分配和管理标签。
-+ **入标签（Incoming Label）**：即 LSR 收到数据报时其携带的标签。
-+ **出标签（Outgoing Label）**：LSR 转发数据报前，用于替换数据报中标签的标签，也是由 LER 分配给自己的标签。
++ **入标签（Incoming Label）**：即标签交换路由器收到数据报时其携带的标签。
++ **出标签（Outgoing Label）**：标签交换路由器转发数据报前，用于替换数据报中标签的标签，也是由标签边缘路由器分配给自己的标签。
 
 当一个 IP 数据报需要穿过 MPLS 域时：
 
