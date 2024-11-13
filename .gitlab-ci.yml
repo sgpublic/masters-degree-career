@@ -44,7 +44,7 @@ pages:
   script:
     - cd public
     - unzip -O UTF-8 $ARTIFACT
-    - rm $ARTIFACT
+    - rm $ARTIFACT report.json
     - ls -l
 
   artifacts:
