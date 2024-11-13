@@ -144,7 +144,9 @@
 + **发送方最大报文段 SMSS（Sender Maximum Segment Size）**
 
   指发送方发送的最大报文段大小，单位 **1 字节**，根据链路路径上最小 MTU、RMSS 等因素确定。
++ **报文最大生存时间 MSL（Maximum Segment Lifetime）**
 
+  指报文在网络上存在的最长时间。（[RFC-768](https://datatracker.ietf.org/doc/html/rfc793#:~:text=For%20this%20specification%20the%20MSL%20is%20taken%20to%20be%202%20minutes.)）标准 MSL 规定为 2 分钟。
 + **累计确认（Cumulative Acknowladgment）**
 
   确认并非收到一个字节就确认一个字节，而是累计一定数量的数据再发送确认，例如：正确收到一整个报文段后对这个报文段中的数据进行累计确认。

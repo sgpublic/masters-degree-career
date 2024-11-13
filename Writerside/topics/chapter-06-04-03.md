@@ -2,6 +2,8 @@
 
 HTTP 协议是现代互联网中广泛使用的协议。
 
+HTTP 协议本身是**无状态协议**，但基于 HTTP 协议的应用可以通过适当的机制（如会话管理和状态保持）实现有状态的行为。
+
 HTTP 协议通常监听 80 端口；HTTPS 是在 HTTP 上增加了 TLS/SSL 加密层，通常监听 443 端口。
 
 HTTP 协议截止本文编写时（2024 年）拥有 HTTP/1.0（[RFC-1945](https://datatracker.ietf.org/doc/html/rfc1945)）、HTTP/1.1（[RFC-7231](https://datatracker.ietf.org/doc/html/rfc7231)）、HTTP/2（[RFC-7540](https://datatracker.ietf.org/doc/html/rfc7540)）、HTTP/3（[RFC-9000](https://datatracker.ietf.org/doc/html/rfc9000)）共 4 个版本。
@@ -12,6 +14,15 @@ HTTP 协议截止本文编写时（2024 年）拥有 HTTP/1.0（[RFC-1945](https
 2. **客户端发送 HTTP 请求报文**
 3. **服务端发送 HTTP 响应报文**
 4. **释放 TCP 连接**
+
+相关词条：
+
++ **无状态（Stateless）**
+
+  每次请求都是独立的，服务器不记录之前的请求状态或信息。这样做简化了逻辑，减少了资源消耗。
++ **有状态（Stateful）**
+
+  服务器会记住或维护客户端的状态信息，以便在随后的交互中使用。适合需要保持用户上下文的应用，如在线购物、社交媒体、登录系统等。
 
 ## 6.4.3.1 HTTP/1.1
 

@@ -9,7 +9,7 @@
     + 目的 IP 地址属于某个网络的 IP 数据报。（这相当于普通路由器转发的行为）
     + 所有源地址与目的地址都相同的 IP 数据报。
     + 具有某种服务质量要求的 IP 数据报。
-+ **流量工程资源预留协议 RSVP-TE（Resource Reservation Protocol for Traffic Engineering）**
++ **资源预留协议-流量工程 RSVP-TE（Resource Reservation Protocol for Traffic Engineering）**
 
   RSVP-TE 是资源预留协议 RSVP 的扩展，增加了流量工程的支持，主要用于在 MPLS 中基于时延、带宽等因素计算转发路径。
 
