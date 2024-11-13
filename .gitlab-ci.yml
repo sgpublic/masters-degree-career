@@ -38,11 +38,13 @@ pages:
   stage: deploy
   needs: [build, test]
   image: ubuntu:latest
+  before_script:
+    - apt-get update -y && apt-get install unzip -y
+
   script:
-    - python3 -m zipfile -e $ARTIFACT public
-    - pwd
-    - echo $WORK
-    - ls -alFh
+    - cd public
+    - unzip -O UTF-8 $ARTIFACT
+    - ls -l
 
   artifacts:
     paths:
