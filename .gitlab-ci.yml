@@ -44,6 +44,7 @@ pages:
   script:
     - cd public
     - unzip -O UTF-8 $ARTIFACT
+    - rm $ARTIFACT
     - ls -l
 
   artifacts:
