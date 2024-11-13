@@ -1,20 +1,50 @@
-# The Docker image that will be used to build your app
-image: jetbrains/writerside-builder:242.21870
-# Functions that should be executed before the build script is run
-before_script:
-  - rm -rf artifacts
-pages:
+variables:
+  INSTANCE: 'Writerside/cpnw'
+  ARTIFACT: 'webHelpCPNW2-all.zip'
+  DOCKER_VERSION: '243.21565'
+
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: registry.jetbrains.team/p/writerside/builder/writerside-builder:$DOCKER_VERSION
   script:
-    - pwd
-    - ls -alFh
-    - /opt/builder/bin/idea.sh helpbuilderinspect --source-dir . --product Writerside/cnw --output-dir artifacts/
-    - python3 -m zipfile -e artifacts/webHelpCNW2-all.zip public
+    - set -e
+    - export DISPLAY=:99
+    - Xvfb :99 &
+    - /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $INSTANCE --runner gitlab -output-dir public/ || true
+    - echo "Testing existence of $ARTIFACT..."
+    - test -e public/$ARTIFACT
   artifacts:
     paths:
-      # The folder that contains the files to be exposed at the Page URL
+      - public/$ARTIFACT
+      - public/report.json
+    expire_in: 1 week
+
+test:
+  stage: test
+  image: openjdk:18-jdk-alpine
+  before_script:
+    - apk add curl
+  script:
+    - cd public
+    - curl -o wrs-checker.jar -L https://packages.jetbrains.team/maven/p/writerside/maven/com/jetbrains/writerside/writerside-ci-checker/1.0/writerside-ci-checker-1.0.jar
+    - java -jar wrs-checker.jar report.json $INSTANCE
+
+pages:
+  stage: deploy
+  needs: [build, test]
+  image: ubuntu:latest
+  script:
+    - python3 -m zipfile -e $ARTIFACT public
+    - pwd
+    - echo $WORK
+    - ls -alFh
+
+  artifacts:
+    paths:
       - public
-    expire_in: never
-  rules:
-    # This ensures that only pushes to the default branch will trigger
-    # a pages deploy
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    expire_in: 1 week

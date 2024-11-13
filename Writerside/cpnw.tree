@@ -2,7 +2,7 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="cnw"
+<instance-profile id="cpnw"
                  name="计算机网络"
                  start-page="starter.md">
 
