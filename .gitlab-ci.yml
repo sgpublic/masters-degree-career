@@ -5,6 +5,8 @@ before_script:
   - rm -rf artifacts
 pages:
   script:
+    - pwd
+    - ls -alFh
     - /opt/builder/bin/idea.sh helpbuilderinspect --source-dir . --product Writerside/cnw --output-dir artifacts/
     - python3 -m zipfile -e artifacts/webHelpCNW2-all.zip public
   artifacts:
