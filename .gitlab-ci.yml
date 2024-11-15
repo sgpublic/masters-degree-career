@@ -1,6 +1,6 @@
 variables:
-  INSTANCE: 'Writerside/cpnw'
-  ARTIFACT: 'webHelpCPNW2-all.zip'
+  INSTANCE: 'Writerside/pgee'
+  ARTIFACT: 'webHelpPGEE2-all.zip'
   DOCKER_VERSION: '243.21565'
 
 stages:
