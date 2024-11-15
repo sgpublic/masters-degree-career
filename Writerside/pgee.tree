@@ -8,8 +8,11 @@
 
     <toc-element topic="politics.md">
         <toc-element topic="politics-01.md"/>
-        <toc-element topic="politics-04.md">
+        <toc-element toc-title="旧民主主义革命时期">
             <toc-element topic="politics-04-01.md"/>
+            <toc-element topic="politics-04-02.md"/>
+            <toc-element topic="politics-04-03.md"/>
+            <toc-element topic="politics-04-appendix.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="english.md">
