@@ -4,9 +4,9 @@
 
 <instance-profile id="pgee"
                  name="研究生招生考试学习笔记"
-                 start-page="index.md">
+                 start-page="home.md">
 
-    <toc-element topic="index.md" />
+    <toc-element topic="home.md" />
     <toc-element topic="politics.md">
         <toc-element topic="politics-01.md"/>
         <toc-element toc-title="旧民主主义革命时期">
