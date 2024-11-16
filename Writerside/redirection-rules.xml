@@ -10,4 +10,8 @@
         <description>Created after removal of "计算机网络" from Instance Name</description>
         <accepts>计算机网络.html</accepts>
     </rule>
+    <rule id="77364681">
+        <description><![CDATA[Created after removal of "<math-01-02.md>" from 研究生招生考试学习笔记]]></description>
+        <accepts>math-01-02.html</accepts>
+    </rule>
 </rules>

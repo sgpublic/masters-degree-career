@@ -23,6 +23,8 @@
 第二段，分析数据成因：
 
 + Additionally, ____.
++ ____ has been working hard for many years on ____(doing sth.), whereby ____ has increased/decreased.
++ Conversely, ____.
 
 第三段，总结全文：
 

@@ -3,9 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="pgee"
-                 name="计算机网络"
-                 start-page="network.md">
+                 name="研究生招生考试学习笔记"
+                 start-page="index.md">
 
+    <toc-element topic="index.md" />
     <toc-element topic="politics.md">
         <toc-element topic="politics-01.md"/>
         <toc-element toc-title="旧民主主义革命时期">
@@ -15,10 +16,24 @@
             <toc-element topic="politics-04-appendix.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="english.md">
+    <toc-element toc-title="英语">
         <toc-element topic="english-04.md">
             <toc-element topic="english-04-01.md"/>
             <toc-element topic="english-04-02.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="math.md">
+        <toc-element toc-title="高等数学">
+            <toc-element topic="math-01-01.md"/>
+            <toc-element topic="math-01-02.md"/>
+            <toc-element topic="math-01-03.md"/>
+            <toc-element topic="math-01-04.md"/>
+            <toc-element topic="math-01-appendix.md"/>
+        </toc-element>
+        <toc-element toc-title="线性代数">
+            <toc-element topic="math-02-01.md"/>
+            <toc-element topic="math-02-02.md"/>
+            <toc-element topic="math-02-03.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="network.md">
