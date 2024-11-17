@@ -1,53 +1,8 @@
-variables:
-  INSTANCE: 'Writerside/pgee'
-  ARTIFACT: 'webHelpPGEE2-all.zip'
-  DOCKER_VERSION: '243.21565'
-
-stages:
-  - build
-  - test
-  - deploy
-
-build:
-  stage: build
-  image: registry.jetbrains.team/p/writerside/builder/writerside-builder:$DOCKER_VERSION
-  script:
-    - set -e
-    - export DISPLAY=:99
-    - Xvfb :99 &
-    - /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $INSTANCE --runner gitlab -output-dir public/ || true
-    - echo "Testing existence of $ARTIFACT..."
-    - test -e public/$ARTIFACT
-  artifacts:
-    paths:
-      - public/$ARTIFACT
-      - public/report.json
-    expire_in: 1 week
-
-test:
-  stage: test
-  image: openjdk:18-jdk-alpine
-  before_script:
-    - apk add curl
-  script:
-    - cd public
-    - curl -o wrs-checker.jar -L https://packages.jetbrains.team/maven/p/writerside/maven/com/jetbrains/writerside/writerside-ci-checker/1.0/writerside-ci-checker-1.0.jar
-    - java -jar wrs-checker.jar report.json $INSTANCE
-
 pages:
-  stage: deploy
-  needs: [build, test]
-  image: ubuntu:latest
-  before_script:
-    - apt-get update -y && apt-get install unzip -y
-
+  image: node:20.18.0-bookworm
   script:
-    - cd public
-    - unzip -O UTF-8 $ARTIFACT
-    - rm $ARTIFACT report.json
-    - ls -l
-
+    - ./scripts/build.sh
   artifacts:
     paths:
-      - public
+      - build
     expire_in: 1 week

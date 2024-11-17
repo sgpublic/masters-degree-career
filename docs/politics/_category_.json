@@ -1,0 +1,8 @@
+{
+  "label": "政治",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "politics/index"
+  }
+}
