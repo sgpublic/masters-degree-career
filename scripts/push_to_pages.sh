@@ -5,7 +5,7 @@ set -e
 cd build
 
 git init
-git remote add origin https://$GITLAB_USER:$GITLAB_TOKEN@$GITLAB_HOST/mhmzx/computer-network.git
+git remote add origin https://$GITLAB_USER:$GITLAB_TOKEN@$GITLAB_HOST/mhmzx/pgee.git
 git checkout -b pages
 git add .
 git config --global user.email "bot@example.com"

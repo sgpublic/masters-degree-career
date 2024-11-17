@@ -39,7 +39,7 @@
 
         2. 若信息部分中出现一个 $\mathtt{0x7D}$，则转变为 2 字节序列 $\mathtt{0x7D},\mathtt{0x5D}$。
 
-        3. 若信息部分中出现了 ASCII 码的控制字符，则将其转换为 2 字节序列 $\mathtt{0x7D},\mathtt{控制字符+0x20}$。
+        3. 若信息部分中出现了 ASCII 码的控制字符，则将其转换为 2 字节序列 $\mathtt{0x7D},\mathtt{\text{控制字符}+0x20}$。
 
            例如：若出现 $\mathtt{0x03}$（代表“传输结束”的字符 ETX），则转变为 2 字节序列 $\mathtt{0x7D},\mathtt{0x23}$。
 
