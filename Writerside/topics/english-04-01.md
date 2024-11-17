@@ -4,6 +4,10 @@
 
 ## 书信
 
+词汇/组：
+
++ dream about sb./sth. at night：晚上梦到它
+
 信头：
 
 + 通用：Dear ___,
@@ -21,6 +25,17 @@
 
 + I am so glad to hear that ____. Congratulations!
 + This is a truly incredible accomplishment, I am so happy for you!
+
+感谢：
+
++ I'm writing to expressing my gratitude to you.
++ During the time I ____(did sth.), I promised myself I would write a letter of thanks as soon as I ____(did sth.).
++ To express my gratitude, it is my pleasure for me to ____(do sth.).
++ I was so impressed that I even dream about it at night.
+
+邀请：
+
++ It is my pleasure for me to invite you to ____(do sth.).
 
 建议：
 

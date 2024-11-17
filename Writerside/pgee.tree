@@ -9,11 +9,17 @@
     <toc-element topic="home.md" />
     <toc-element topic="politics.md">
         <toc-element topic="politics-01.md"/>
-        <toc-element toc-title="旧民主主义革命时期">
-            <toc-element topic="politics-04-01.md"/>
-            <toc-element topic="politics-04-02.md"/>
-            <toc-element topic="politics-04-03.md"/>
-            <toc-element topic="politics-04-appendix.md"/>
+        <toc-element toc-title="中国近代史纲要">
+            <toc-element toc-title="旧民主主义革命时期">
+                <toc-element topic="politics-04-01-01.md"/>
+                <toc-element topic="politics-04-01-02.md"/>
+                <toc-element topic="politics-04-01-03.md"/>
+                <toc-element topic="politics-04-01-appendix.md"/>
+            </toc-element>
+            <toc-element toc-title="新民主主义革命时期">
+                <toc-element topic="politics-04-02-01.md"/>
+                <toc-element topic="politics-04-02-appendix.md"/>
+            </toc-element>
         </toc-element>
     </toc-element>
     <toc-element toc-title="英语">

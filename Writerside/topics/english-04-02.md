@@ -13,6 +13,7 @@
 + market share：市场份额
 + increase by/decrease by：上升了/下降了
 + significant：显著的
++ introduce new technique：引进新技术
 
 第一段，分析图表，挑重点、想表达的数据：
 
@@ -23,7 +24,8 @@
 第二段，分析数据成因：
 
 + Additionally, ____.
-+ ____ has been working hard for many years on ____(doing sth.), whereby ____ has increased/decreased.
++ As we all know, ____(sb.) has been working hard for many years on ____(doing sth.), whereby ____ has increased/decreased.
++ It pays in the long run to ____(do sth.).
 + Conversely, ____.
 
 第三段，总结全文：
