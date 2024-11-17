@@ -16,11 +16,11 @@
 
 其中，$\tau$ 的计算公式为：
 $$
-\tau=信道长度(m) \times 信号传播速率(m/s)
+\tau=\text{信道长度}(m) \times \text{信号传播速率}(m/s)
 $$
 因此，使用 CSMA/CD 协议的网络，最小帧长不得小于 $F_{min}$：
 $$
-F_{min}=2 \times \tau \times 允许负数）{数据传输速率}(bit/s)
+F_{min}=2 \times \tau \times \text{数据传输速率}(bit/s)
 $$
 若接收到长度小于 $F_{min}$ 的帧，则必为**由于冲突而异常终止的帧**，应当立即**丢弃**。
 
