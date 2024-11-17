@@ -95,7 +95,7 @@ const config: Config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: 'rgb(255, 255, 255)',
           },
           {
             tagName: 'meta',
@@ -116,7 +116,7 @@ const config: Config = {
             tagName: 'link',
             rel: 'mask-icon',
             href: '/img/docusaurus.svg',
-            color: 'rgb(37, 194, 160)',
+            color: 'rgb(255, 255, 255)',
           },
           {
             tagName: 'meta',
@@ -131,6 +131,14 @@ const config: Config = {
         ],
       },
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+      type: 'text/css',
+      crossorigin: 'anonymous',
+    },
   ],
 };
 
