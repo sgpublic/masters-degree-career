@@ -1,0 +1,16 @@
+{
+  "name": "研究生招生考试学习笔记",
+  "short_name": "学习笔记",
+  "description": "忆丶距的研究生招生考试学习笔记",
+  "start_url": "/pgee/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "img/docusaurus.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {useEffect} from "react";
-import {useHistory, useLocation} from "@docusaurus/router";
+import {useHistory} from "@docusaurus/router";
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
