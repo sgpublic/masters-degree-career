@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# 前言
+# 目录
 
 本仓库为自用考研知识总结，水平有限，如有错误，恳请大佬们指正。
 

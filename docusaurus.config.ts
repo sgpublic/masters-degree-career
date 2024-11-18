@@ -36,7 +36,7 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
@@ -44,6 +44,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/sgpublic/pgee/tree/main',
+          // path: 'docs/home',
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -52,25 +53,6 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
-  themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    navbar: {
-      title: '研究生招生考试学习笔记',
-      items: [
-        {
-          href: 'https://github.com/sgpublic/pgee',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
 
   plugins: [
     [
@@ -133,6 +115,49 @@ const config: Config = {
       },
     ],
   ],
+
+  themeConfig: {
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: '研究生招生考试学习笔记',
+      items: [
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'politics/index',
+          label: '政治',
+        },
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'english/index',
+          label: '英语',
+        },
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'math/index',
+          label: '数学',
+        },
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'network/index',
+          label: '计算机网络',
+        },
+        {
+          href: 'https://github.com/sgpublic/pgee',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
 
   stylesheets: [
     {

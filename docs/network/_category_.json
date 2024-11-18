@@ -2,7 +2,6 @@
   "label": "计算机网络（803）",
   "position": 5,
   "link": {
-    "type": "doc",
-    "id": "network/index"
+    "type": "generated-index"
   }
 }
