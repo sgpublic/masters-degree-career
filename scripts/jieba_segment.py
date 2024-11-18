@@ -6,8 +6,6 @@ from collections import defaultdict
 
 pwd = os.path.dirname(os.path.abspath(__file__))
 
-jieba.enable_paddle()
-
 # Function to extract plain text from markdown content using markdown-it
 def extract_text_from_markdown(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -35,7 +33,7 @@ def extract_text_from_markdown(file_path):
 # Function to segment text using jieba
 def segment_text(text):
     # Use jieba to segment text
-    return list(jieba.posseg.cut(text, use_paddle=True))
+    return list(jieba.posseg.cut(text))
 
 # Directory containing your markdown files
 markdown_directory = os.path.join(pwd, "../docs")
