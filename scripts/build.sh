@@ -2,5 +2,5 @@
 
 set -e
 
-npm install
-npm run build
+$(dirname $0)/jieba_segment.sh
+$(dirname $0)/npm_build.sh

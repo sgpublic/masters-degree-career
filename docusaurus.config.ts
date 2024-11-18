@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import * as path from "node:path";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -153,12 +154,13 @@ const config: Config = {
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        language: ["zh"],
+        language: ["zh", "en"],
         // ```
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
         docsRouteBasePath: "/",
+        zhUserDictPath: path.resolve("./scripts/jieba.txt"),
       }),
     ],
   ],
