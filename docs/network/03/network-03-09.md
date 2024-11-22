@@ -1,6 +1,6 @@
 # 3.9 以太网的帧格式（P98 3.3.5）
 
-以太网的帧即 MAC 帧。MAC 帧最小长度为 64 字节，格式如下：
+以太网的帧即 MAC 帧。MAC **帧最小长度为 64 字节**，格式如下：
 
 | Destination MAC Address | Source MAC Address | EtherType | Frame Payload (Data) | Frame Check Sequence (FCS) |
 |-------------------------|--------------------|-----------|----------------------|----------------------------|
