@@ -8,6 +8,7 @@
 
 + dream about sb./sth. at night：晚上梦到它
 + change it for a new one：换一个新的
++ warm-hearted：热心
 
 ### 信头
 
@@ -20,8 +21,12 @@
 
 ### 通用句式
 
-+ Compared to ____(sth.), the ____(sth.) of ____(sth.) is even more ____(adj.).
++ Compared to ____(sth.), ____.
++ As ____, ____(sb.) are supposed to do one's utmost to ____(do sth.).
 + A typical example of this is that ____(sb. did sth.).
++ I am writing for the purpose of ____(doing sth.).
++ I am convinced that ____(完整句，虚拟语气).
++ Nowadays, ____(sth.) is increasingly not ____(sth.), but ____(sth.) does.
 
 ### 分点论述
 
@@ -57,3 +62,13 @@
 
 + I'd like to give you some suggestions on ____.
 + I hope these suggestions can help you ____.
+
+### 寒暄
+
+认识的人开篇可寒暄。
+
+It is excited to recalls the ____(sth.).
+
+### 说明
+
++ ____(sth.) is scheduled to start at ____(clock) on ____(date) in ____(place), and last for about ____(time).
