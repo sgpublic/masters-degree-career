@@ -9,6 +9,7 @@
 + dream about sb./sth. at night：晚上梦到它
 + change it for a new one：换一个新的
 + warm-hearted：热心
++ action rather than desire：心动不如行动
 
 ### 信头
 

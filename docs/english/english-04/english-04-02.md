@@ -26,6 +26,7 @@
 + increase by/decrease by：上升了/下降了
 + significant：显著的
 + introduce new technique：引进新技术
++ changing trends：变化趋势
 
 第一段，分析图表，挑重点、想表达的数据：
 

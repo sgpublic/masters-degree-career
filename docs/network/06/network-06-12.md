@@ -6,6 +6,8 @@ sidebar_position: 12
 
 **简单网络管理协议 SNMP（Simple Network Management Protocol）** 是广泛应用于 TCP/IP 网络的网络管理标准协议，支持通过网络管理系统，以监测连接到网络上的设备是否有任何引起管理上关注的情况。
 
+**SNMP 基于 UDP 协议。**
+
 SNMP 的基本元素包括：
 
 1. **管理站（Manager）**：网络管理系统，负责发起 SNMP 请求，收集和处理来自代理的信息。
