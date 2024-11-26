@@ -57,7 +57,7 @@ sidebar_position: 99
 <td>依靠</td>
 <td>保护</td>
 <td>限制</td>
-<td></td>
+<td>消灭</td>
 </tr>
 
 <tr>
