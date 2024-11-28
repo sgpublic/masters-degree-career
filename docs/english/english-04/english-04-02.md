@@ -2,7 +2,7 @@
 
 大作文尽量写 160-170 词。
 
-写三段式。
+写三段式。大作文貌似就是图表。
 
 ## 通用句式
 
@@ -16,11 +16,9 @@
 
   相反，____。
 
-## 图表
-
 不要以第一人称写，以第三人称写。
 
-### 词汇/组
+## 词汇/组
 
 + market share：市场份额
 + increase by/decrease by：上升了/下降了
@@ -28,7 +26,9 @@
 + introduce new technique：引进新技术
 + changing trends：变化趋势
 
-第一段，分析图表，挑重点、想表达的数据：
+## 第一段
+
+分析图表，挑重点、想表达的数据：
 
 + This chart shows ____.
 
@@ -36,11 +36,13 @@
 + It’s clear that ____.
 
   不难看出，____。
-+ The number of ____(sth.) is about ____(N times/twice) that of ____(sth.) 
++ The number of ____(sth.) is about ____(N times/twice) that of ____(sth.)
 
   \____的数量是\____的\____倍。
 
-第二段，分析数据成因：
+## 第二段
+
+分析数据成因：
 
 + As we all know, ____(sb.) has been working hard for many years on ____(doing sth.), whereby ____ has increased/decreased.
 
@@ -49,7 +51,9 @@
 
   从长远来看，____。
 
-第三段，总结全文：
+## 第三段
+
+总结全文：
 
 + Generally speaking, it is exciting/regretful to see ____.
 
