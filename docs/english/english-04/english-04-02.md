@@ -44,7 +44,7 @@
 
 分析数据成因：
 
-+ As we all know, ____(sb.) has been working hard for many years on ____(doing sth.), whereby ____ has increased/decreased.
++ As we all know, ____(sb.) has been working hard for several years on ____(doing sth.), whereby ____ has increased/decreased.
 
   众所周知，\____这些年一直努力\____，凭借与此，\____有所上升/下降。
 + It pays in the long run to ____(do sth.).
