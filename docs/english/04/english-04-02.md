@@ -25,6 +25,8 @@
 + significant：显著的
 + introduce new technique：引进新技术
 + changing trends：变化趋势
++ high-quality development：高质量发展
++ new quality productive forces：新质生产力
 
 ## 第一段
 
@@ -46,18 +48,16 @@
 
 + As we all know, ____(sb.) has been working hard for several years on ____(doing sth.), whereby ____ has increased/decreased.
 
-  众所周知，\____这些年一直努力\____，凭借与此，\____有所上升/下降。
-+ It pays in the long run to ____(do sth.).
-
-  从长远来看，____。
+  众所周知，\_\_\_\_这些年一直努力____，凭借与此，____有所上升/下降。
 
 ## 第三段
 
 总结全文：
 
-+ Generally speaking, it is exciting/regretful to see ____.
++ Generally speaking, it is exciting/regretful to see ____(sth.).
 
   总的来说，能看到____是令人激动/惋惜的。
-+ It reveals that ____ has increasingly transformed ____ into ____.
++ It reveals that ____(sb./sth.) has increasingly transformed ____(sb./sth.) into ____(sb./sth.).
 
   这揭示了____已经逐渐从____转变为____了。
++ This can help us to see, partly, the status of ____(sth.).
