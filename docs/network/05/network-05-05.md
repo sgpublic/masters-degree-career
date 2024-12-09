@@ -1,6 +1,6 @@
 # 5.5 UDP 和 TCP 报文段报头格式
 
-#### 5.2.1 UDP 报头的格式
+## 5.5.1 UDP 报头的格式
 
 （[RFC-768](https://datatracker.ietf.org/doc/html/rfc768)）UDP 首部如下所示：
 
@@ -26,7 +26,7 @@
 
 **UDP 首部固定部分长度 8 字节。**
 
-#### 5.5.2 TCP 报头格式
+## 5.5.2 TCP 报头格式
 
 （[RFC-9293 3.1](https://datatracker.ietf.org/doc/html/rfc1072#section-3.1)）TCP 报头格式如下所示：
 
