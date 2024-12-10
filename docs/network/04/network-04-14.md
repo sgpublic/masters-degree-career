@@ -62,4 +62,4 @@ NAT 会跟踪每一个会话，当网络中的应用发送数据到外部网络�
 
   **NAT 穿越（NAT Traversal）** 俗称 NAT 打洞，常见的 NAT 穿越协议包括 **STUN（Session Traversal Utilities for NAT）** 和 **TURN（Traversal Using Relays around NAT）** 等。
 
-  根据 NAT 原理，如果两个用户通过 NAT 连接网络，那么其本地获取到的 IP 实际上不能被另一个用户直接访问，NAT 穿越可以协助这两个用户在 NAT 网络内寻找到一条可以互相连接的路径。
+  根据 NAT 原理，如果两个用户通过 NAT 连接网络，那么其本地获取到的 IP 实际上不能被另一个用户直接访问，NAT 穿越可以协助这两个用户获取其在经过 NAT 映射之后的公网地址，以供相互发起连接。
