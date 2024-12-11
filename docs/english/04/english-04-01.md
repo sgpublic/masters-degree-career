@@ -10,6 +10,7 @@
 + change it for a new one：换一个新的
 + warm-hearted：热心
 + action rather than desire：心动不如行动
++ the national entrance examination for postgraduate studies：研究生入学考试
 
 ## 信头
 
@@ -127,9 +128,27 @@
 + It is excited to recalls the ____(sth.).
 
   会想起____，我总是很兴奋。
++ I am quite glad to receive your invitation of ____(doing sth.).
+
+  我很高兴收到您____的邀请。
 
 ## 说明
 
 + ____(sth.) is scheduled to start at ____(clock) on ____(date) in ____(place), and last for about ____(time).
 
   \_\_\_\_计划于____（日期）的____（时间），在____（地点）开始，并持续____（时长）。
+
+## 道歉
+
++ Several days ago, I did plan to ____(do sth.), but as you know, during the past year, I was terrible busy since I devoted nearly all my time and energy to ____(doing sth.).
+
+  几天前，我确实打算____，但您知道，再过去的这一年，我非常忙碌，因为我把几乎所有的时间和精力都投入到了____上。
++ Unfortunately, owning to my carelessness, I did not notice that ____(完整句，一般现在时).
+
+  不幸的是，由于我的疏忽，我没有注意到____。
++ Accordingly, I have no option but to ____(do sth,).
+
+  因此，我没有选择，只能____。
++ At last, I sincerely hope that you can forgive me.
+
+  最后，我诚挚的希望您能原谅我。
