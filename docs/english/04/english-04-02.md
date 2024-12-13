@@ -46,7 +46,7 @@
 
 分析数据成因：
 
-+ As we all know, ____(sb.) has been working hard for several years on ____(doing sth.), whereby ____ has increased/decreased/plunged.
++ As we all know, ____(sb.) has been working hard for several years on ____(high-quality development/developing technique/developing new quality productive forces/doing sth.), whereby ____ has increased/decreased/plunged.
 
   众所周知，\_\_\_\_这些年一直努力____，凭借与此，____有所上升/下降。
 
