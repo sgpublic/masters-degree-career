@@ -72,6 +72,9 @@
 + During the time I ____(did sth.), I promised myself I would write a letter of thanks as soon as I ____(did sth.).
 
   当我还在____的时候，我就决定在我____的时候一定要写信感谢你。
++ Finally, I would like to express my sincere gratitude for your ____(sth.) once again.
+
+  最后，让我再次为您的____表示诚挚的感谢。
 + To express my gratitude, it is my pleasure for me to ____(do sth.).
 
   为了表达我的感谢，我____。
