@@ -2,7 +2,7 @@
 
 set -e
 
-apt update
-apt install -y python3.11-venv
+apt-get update
+apt-get install -y python3.11-venv
 
 $(dirname $0)/build.sh
