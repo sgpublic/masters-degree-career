@@ -3,8 +3,12 @@ pages:
   variables:
     GIT_STRATEGY: clone
     TZ: Asia/Shanghai
+    GITLAB_HOST: $GITLAB_HOST
+    GITLAB_TOKEN: $GITLAB_TOKEN
+    GITLAB_USER: $GITLAB_USER
   script:
     - ./scripts/ci_build.sh
+    - ./scripts/push_to_pages.sh
     - mv build public
   artifacts:
     paths:
