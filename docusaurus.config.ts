@@ -147,6 +147,12 @@ const config: Config = {
           label: '计算机网络',
         },
         {
+          type: 'doc',
+          position: 'left',
+          docId: 'programming/index',
+          label: '程序设计（C/C++）',
+        },
+        {
           href: 'https://github.com/sgpublic/pgee',
           label: 'GitHub',
           position: 'right',

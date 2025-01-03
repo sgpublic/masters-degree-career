@@ -1,0 +1,8 @@
+{
+  "label": "一、数据类型及其操作",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "基本数据类型、数组、指针、结构体、链表等的定义、初始化、引用和操作"
+  }
+}
