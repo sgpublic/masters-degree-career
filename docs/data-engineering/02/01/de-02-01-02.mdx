@@ -89,3 +89,21 @@ F1-score 是一种针对分类任务的性能指标，反应了模型对正例�
 + **AUC（Area Under Curve）**
 
   即 ROC 曲线与横坐标轴围成的面积。通常认为 AUC 越大，模型的性能越好。
+
+## 2.1.2.3 RMSE & MSE
+
+**均方根误差 RMSE（Root Mean Squared Error）** 和**均方误差 MSE（Mean Squared Error）** 都是针对回归模型的。
+
+均方误差 MSE：
+
+$$
+MSE=\frac{1}{m} \sum_{i=1}^{m}{(y_i-y'_i)^2}
+$$
+
+均方根误差 RMSE：
+
+$$
+RMSE=\sqrt{MSE}=\sqrt{\frac{1}{m} \sum_{i=1}^{m}{(y_i-y'_i)^2}}
+$$
+
+其中 $m$ 表示测试样例个数，$y_i$ 表示第 $i$ 个实例的真实目标值，$y'_i$ 表示第 $i$ 个实例的模型预测值。
