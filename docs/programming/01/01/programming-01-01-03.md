@@ -1,42 +1,61 @@
-# 1.1.3 字符串类型
+# 1.1.3 常量
 
-C 语言使用 char 数组存放字符串。例如：
+常量区别于变量，声明之后不可改变的量。
 
-```c
-char *s1 = "abcdef";
-char s2[] = "abcdef";
+## 1.1.3.1 字面常量
+
+例如：
+
+```
+int a = 100;
 ```
 
-两种定义方式都是可以的，需要注意的是，`"abcdef"` 本身是个常量，第一种方法是一个指针直接指向这个常量，因此是不能修改 `s1` 某个位置上的字符：
+其中，“100”就是一个常量，是编译后不可修改的量，换句话说，当程序运行到这一行时，赋值给变量 a 的值只能是 100，不会是其他值。
+
+这种常量分为三种类型：
+
++ **整形常量**：即整数，例如 `100`、`20`、`1.2E3`。
++ **实型常量**：即小数，例如 `1.234`、`1.234E2`。
++ **字符常量**：即字符，例如 `'A'`、`'\0'`。
+
+## 1.1.3.2 常变量
+
+还可以用 `const` 关键字来修饰一个变量，使之具有常属性，即常变量：
+
+```c
+const int a = 100;
+```
+
+## 1.1.3.3 枚举常量
+
+枚举也属于常量，C 语言中枚举使用 int 存储，默认从 0 开始，可以手动定义，若手动定义了某一个枚举的值，那么下一个枚举会从定义的数字继续定义。例如：
 
 ```c
 #include <stdio.h>
 
-int main() {
-    char *s1 = "abcdef";
-    s1[1] = 'r';
-    printf("%s\n", s1);
-    return 0;
-}
-```
+enum Color {
+    RED, YELLOW, BLUE
+};
 
-输出（崩溃）：
-
-```
-/Users/madray/Documents/JetBrains/CLion/CTest/cmake-build-debug/CTest
-
-Process finished with exit code 138 (interrupted by signal 10: SIGBUS)
-```
-
-而第二种方法则是将常量拷贝到这个数组里面，因此可以修改 `s2` 某个位置上的字符：
-
-```c
-#include <stdio.h>
+enum Sex {
+    MALE,
+    FEMALE = 3, // 手动定义为 3
+    SECRET // 由于上一个枚举有手动定义值，此枚举将继续上一个枚举的值定义，即定义为 4
+};
 
 int main() {
-    char s1[] = "abcdef";
-    s1[1] = 'r';
-    printf("%s\n", s1);
+    printf("RED: %d\n", RED);
+    printf("MALE: %d\n", MALE);
+    printf("FEMALE: %d\n", FEMALE);
+    printf("SECRET: %d\n", SECRET);
+
+    // 由于枚举使用 int 存储，因此不同枚举的值可以相等
+    if (RED == MALE) {
+        printf("RED == MALE\n");
+    } else {
+        printf("RED != MALE\n");
+    }
+
     return 0;
 }
 ```
@@ -44,16 +63,64 @@ int main() {
 输出：
 
 ```
-/Users/madray/Documents/JetBrains/CLion/CTest/cmake-build-debug/CTest
-arcdef
+/Users/madray/Documents/JetBrains/CLion/CPP_Test/cmake-build-debug/CPP_Test
+RED: 0
+MALE: 0
+FEMALE: 3
+SECRET: 4
+RED == MALE
 
 Process finished with exit code 0
 ```
 
-C 语言中，字符串的末尾使用字符 `\0` 标记，也就是说，C 程序用 `\0` 来辨别字符串的末尾。
+## 1.1.3.4 标识符常量
 
-由于 C 程序中字符串的本质是 char 数组，因此还能用这种方式定义字符串：
+书中提到，也可以使用 `#define` 定义常量。例如：
 
 ```c
-char s1[] = {'1', '1', '4'};
+#define PI 3.14
+
+#include <stdio.h>
+
+int main() {
+    printf("%f", PI);
+    return 0;
+}
 ```
+
+输出：
+
+```
+/Users/madray/Documents/JetBrains/CLion/CPP_Test/cmake-build-debug/CPP_Test
+1.1.140000
+Process finished with exit code 0
+```
+
+<details>
+
+<summary>DLC</summary>
+
+`#define` 做的实际上就是定义了一个宏而已，而编译器会在预处理期（也就是正式编译前）将代码中所有宏定义进行文本替换，例如：
+
+```c
+#define PI 3.14
+
+#include <stdio.h>
+
+int main() {
+    printf("%f", PI);
+    return 0;
+}
+```
+
+这段代码在编译前，编译器会将代码处理为以下内容（仅供原理解释，不严谨代表实际情况）：
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("%f", 3.14);
+    return 0;
+}
+```
+</details>
