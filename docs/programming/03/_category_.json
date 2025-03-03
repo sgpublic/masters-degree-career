@@ -1,0 +1,8 @@
+{
+  "label": "三、程序输入输出实现",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "程序中赋值、键盘输入和输出，通过文件进行数据存取"
+  }
+}

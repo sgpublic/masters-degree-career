@@ -13,6 +13,11 @@ sidebar_position: 0
 
 标准：
 
-+ C：C99
++ C99
++ C++11
 
-使用的 IDE 为 JetBrains CLion 2023.2.5。
+本文所使用的环境如下：
+
++ 系统：macOS 14.7.2
++ 架构：Intel x86_64
++ IDE：JetBrains CLion 2023.2.5

@@ -76,3 +76,5 @@ struct_a.value：1919810
 
 Process finished with exit code 0
 ```
+
+> 要是不是主修 C/C++ 的还是别记这个了，能看懂就行，面向对象还是老老实实 C++ 吧。

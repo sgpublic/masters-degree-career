@@ -13,8 +13,93 @@ struct _LinkedListNode {
 };
 ```
 
+注意创建节点时要使用 `malloc`（若不使用直接声明的话，对象会在函数执行完成后自动释放）：
+
+```c
+struct LinkedListNode* newNode(int value) {
+    struct LinkedListNode *node = (struct LinkedListNode*)malloc(sizeof(struct LinkedListNode));
+    node->value = value;
+    node->next = NULL;
+    return node;
+}
+```
+
+
 <details>
 <summary>完整代码</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+struct LinkedListNode {
+    int value;
+    struct LinkedListNode* next;
+};
+
+struct LinkedListNode* newNode(int value) {
+    struct LinkedListNode *node = (struct LinkedListNode*)malloc(sizeof(struct LinkedListNode));
+    node->value = value;
+    node->next = NULL;
+    return node;
+}
+
+void freeNodes(struct LinkedListNode* node) {
+    if (node->next != NULL) {
+        freeNodes(node->next);
+    } else {
+        free(node);
+    }
+}
+
+int main() {
+    struct LinkedListNode *head = newNode(0);
+    struct LinkedListNode *current = head;
+    struct LinkedListNode *next;
+
+    next = newNode(1);
+    current->next = next;
+    current = next;
+
+    next = newNode(2);
+    current->next = next;
+    current = next;
+
+    next = newNode(3);
+    current->next = next;
+
+    current = head;
+    while (true) {
+        printf("%d\n", current->value);
+        if (current->next == NULL) {
+            break;
+        }
+        current = current->next;
+    }
+
+    freeNodes(head);
+
+    return 0;
+}
+```
+
+输出：
+
+```
+/Users/madray/Documents/JetBrains/CLion/CTest/cmake-build-debug/CTest
+0
+1
+2
+3
+
+Process finished with exit code 0
+```
+
+</details>
+
+<details>
+<summary>DLC</summary>
 
 利用函数指针，可实现较为完整的 LinkedList。
 
