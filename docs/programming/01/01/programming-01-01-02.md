@@ -32,23 +32,21 @@ Process finished with exit code 0
 
 全局变量的作用域是整个工程，工程编译时会合并所有源文件，当一个源文件需要使用另一个源文件中定义的全局变量时，使用 extern 关键字声明。例如：
 
-+ g_val.c
 
-  ```c
-  int g_val = 100;
-  ```
-+ main.c
+```c title='g_val.c'
+int g_val = 100;
+```
 
-  ```c
-  #include <stdio.h>
+```c title='main.c'
+#include <stdio.h>
 
-  extern int g_val; // 使用 g_val.c 中定义的全局变量
-  
-  int main() {
-      printf("%d\n", g_val);
-      return 0;
-  }
-  ```
+extern int g_val; // 使用 g_val.c 中定义的全局变量
+
+int main() {
+    printf("%d\n", g_val);
+    return 0;
+}
+```
 
 输出：
 
