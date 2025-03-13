@@ -129,3 +129,29 @@ int main() {
 1 + 1 = 2
 Process finished with exit code 0
 ```
+
+## 1.3.4 指针的指针
+
+根据前文一个数组如果直接使用，实际上是得到该数组首元素的指针。若取数组的指针，那么得到的是一个指向整个数组的指针，这个指针将整个数组视为一个元素，也就是说对这个指针 +1 之后，得到的指针将指向这个数组的下一个元素。例如：
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a[5] = { 1, 2, 3, 4, 5 };
+    int* prt1 = (int*)(&a + 1);
+    int* prt2 = (int*)(a + 1);
+    printf("%x, %x\n", prt1[-1], *prt2);
+}
+```
+
+输出：
+
+```
+/Users/madray/Documents/JetBrains/CLion/CTest/cmake-build-debug/CTest
+5, 2
+
+Process finished with exit code 0
+```
+
+可以看到，`prt1[-1]` 指向的是数组 `a` 的最后一个元素，而 `prt2` 指向的数组 `a` 的第二个元素。
