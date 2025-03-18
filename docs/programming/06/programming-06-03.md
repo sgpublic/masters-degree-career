@@ -1,6 +1,6 @@
 # 6.3 排序
 
-排序题可在 [912. 排序数组 - 力扣（LeetCode）](https://leetcode.cn/problems/sort-an-array/description/) 练习。
+例题：[912. 排序数组 - 力扣（LeetCode）](https://leetcode.cn/problems/sort-an-array/description/) 
 
 十种经典排序算法复杂度如下表：
 

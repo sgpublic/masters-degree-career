@@ -1,6 +1,6 @@
 # 6.15 统计输入字符中的单词个数
 
-LeetCode：[434. 字符串中的单词数](https://leetcode.cn/problems/number-of-segments-in-a-string/description/)
+例题：[434. 字符串中的单词数 - 力扣（LeetCode）](https://leetcode.cn/problems/number-of-segments-in-a-string/description/)
 
 ```cpp
 #include <iostream>
