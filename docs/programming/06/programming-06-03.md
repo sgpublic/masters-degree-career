@@ -1,4 +1,4 @@
-# 6.3 排序
+# 6.3 排序（冒泡排序、选择排序等）
 
 例题：[912. 排序数组 - 力扣（LeetCode）](https://leetcode.cn/problems/sort-an-array/description/) 
 
