@@ -2,7 +2,7 @@
   "label": "五、算法描述方法",
   "position": 5,
   "link": {
-    "type": "doc",
-    "id": "programming/05/index"
+    "type": "generated-index",
+    "description": "程序流程图、N-S 盒图、伪代码等。"
   }
 }

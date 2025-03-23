@@ -1,0 +1,8 @@
+{
+  "label": "DLC.1 历年笔试真题",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "复试笔试科目《C/C++程序设计》。代码已进行格式化，因此可能存在与真题可能存在不一致的情况，请以真题为准。"
+  }
+}
