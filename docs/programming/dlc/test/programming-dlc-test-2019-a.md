@@ -6,10 +6,10 @@
 
    ```c
    double Fun(int n) {
-    if (n == 1)
-        return ____①____;
-    else
-        return ____②____;
+       if (n == 1)
+           return ____①____;
+       else
+           return ____②____;
    }
    ```
    
@@ -27,29 +27,29 @@
    include <stdio.h>
    
    struct comp {
-     float re;
-     float im;
+       float re;
+       float im;
    };
    
    struct comp *m(struct comp *x, struct comp *y);
    
    void main() {
-     struct comp *t;
-     struct comp a, b;
-     a.re = 1;
-     a.im = 2;
-     b.re = 3;
-     b.im = 4;
-     t = m(____①____);
-     printf("t->re = %f, t->im = %f\n", t->re, t->im);
+       struct comp *t;
+       struct comp a, b;
+       a.re = 1;
+       a.im = 2;
+       b.re = 3;
+       b.im = 4;
+       t = m(____①____);
+       printf("t->re = %f, t->im = %f\n", t->re, t->im);
    }
    
    struct comp *m(struct comp *x, struct comp *y) {
-     struct comp *z;
-     z = ____②____
-     z->re = x->re - y->re;
-     z->im = x->im - y->im;
-     return z;
+       struct comp *z;
+       z = ____②____
+       z->re = x->re - y->re;
+       z->im = x->im - y->im;
+       return z;
    }
    ```
    
@@ -68,11 +68,11 @@
    #include<stdio.h>
    
    void main() {
-     float hs, ss;
-     printf("Please input a float number: ");
-     scanf("%f", &hs);
-     ss = ____①____
-     printf(____②____);
+       float hs, ss;
+       printf("Please input a float number: ");
+       scanf("%f", &hs);
+       ss = ____①____
+       printf(____②____);
    }
    ```
    
@@ -81,7 +81,7 @@
    
    ① `5.0f / 9 * (hs - 32);`
    
-   ② `"%f\n", ss`
+   ② `"%.2f\n", ss`
    
    </details>
 
@@ -92,24 +92,24 @@
    #include <math.h>
    
    void main() {
-     int x, y;
-     char ch;
-     scanf("%d %c %d", &x, &ch, &y);
-     switch(ch) {
-         case '^':
-             ____①____;
-             break;
-         ____②____:
-             printf("%d %% %d = %d\n", x, y, x % y);
-             break;
-     }
+       int x, y;
+       char ch;
+       scanf("%d %c %d", &x, &ch, &y);
+       switch(ch) {
+           case '^':
+               ____①____;
+               break;
+           ____②____:
+               printf("%d %% %d = %d\n", x, y, x % y);
+               break;
+       }
    }
    ```
    
    <details>
    <summary>参考答案</summary>
    
-   ① `printf("%d^%d = %lld\n", x, y, (long long) x^y)`
+   ① `printf("%d^%d = %lld\n", x, y, (long long) pow(x, y))`
    
    ② `case '%'`
    
@@ -121,25 +121,25 @@
    #include <math.h>
    
    void main() {
-     float a, xn, xn1;
-     printf("Input a = ");
-     scanf("%f", &a);
-     xn = a / 2;
-     xn1 = (xn + a / xn) / 2;
-     do {
-         xn = xn1;
-         ____①____;
-     } while (____②____);
-     printf("xn1 = %f\n", xn1);
+       float a, xn, xn1;
+       printf("Input a = ");
+       scanf("%f", &a);
+       xn = a / 2;
+       xn1 = (xn + a / xn) / 2;
+       do {
+           xn = xn1;
+           ____①____;
+       } while (____②____);
+       printf("xn1 = %f\n", xn1);
    }
    ```
    
    <details>
    <summary>参考答案</summary>
    
-   ① `printf("%d^%d = %lld\n", x, y, (long long) x^y)`
+   ① `xn1 = (xn + a / xn) / 2`
    
-   ② `xn1 = (xn + a / xn) / 2`
+   ② `fabs(xn - xn1) < 0.00001`
    
    </details>
 
@@ -173,7 +173,7 @@ void main() {
 <details>
 <summary>参考答案</summary>
 
-第 6 行：`c = getc();`
+第 6 行：`c = getchar();`
 
 第 13 行：`a[2] = c + 1;`
 
@@ -181,7 +181,7 @@ void main() {
 
 第 16 行：`a[2] = c + 1;`
 
-第 19 行：`putc(a[i]);`
+第 19 行：`putchar(a[i]);`
 
 </details>
 
@@ -193,18 +193,18 @@ void main() {
    #include <stdio.h>
    
    int func(int a, int b) {
-     static int m, i = 2;
-     i += m + 1;
-     m = i + a + b;
-     return m;
+       static int m, i = 2;
+       i += m + 1;
+       m = i + a + b;
+       return m;
    }
    
    void main() {
-     int k = 4, m = 1, p;
-     p = func(k, m);
-     printf("%d\n", p);
-     p = func(k, m);
-     printf("%d\n", p);
+       int k = 4, m = 1, p;
+       p = func(k, m);
+       printf("%d\n", p);
+       p = func(k, m);
+       printf("%d\n", p);
    }
    ```
    
@@ -446,5 +446,142 @@ void main() {
    <details>
    <summary>参考答案</summary>
 
+   ```c
+   #include <iostream>
    
+   using namespace std;
+   
+   int main() {
+       int count = 1;
+       for (int i = 0; i < 9; ++i) {
+           count += 1;
+           count *= 2;
+       }
+       cout << count << endl;
+   }
+   ```
+   </details>
+2. 字符串排序问题。（15 分）
+
+   **【问题描述】** 输入 n 个字符串，并由大到小排序输出，实现函数，并用主函数验证其有效性。
+
+   <details>
+   <summary>参考答案</summary>
+
+   ```c
+   #include <iostream>
+   
+   using namespace std;
+   
+   vector<string> sort(vector<string> &arr);
+   int compare(string &s1, string &s2);
+   
+   int main() {
+       int n;
+       vector<string> arr;
+       cin >> n;
+       string s;
+       for (int i = 0; i < n; ++i) {
+           cin >> s;
+           arr.push_back(s);
+       }
+   
+       vector<string> sorted_arr = sort(arr);
+       for (string& item: sorted_arr) {
+           cout << item << endl;
+       }
+   }
+   
+   
+   vector<string> sort(vector<string> &arr) {
+       vector<string> result;
+   
+       int max_index;
+       while (!arr.empty()) {
+           max_index = 0;
+           for (int i = 0; i < arr.size(); ++i) {
+               if (compare(arr[max_index], arr[i]) > 0) {
+                   max_index = i;
+               }
+           }
+           result.push_back(arr[max_index]);
+           arr.erase(arr.begin() + max_index);
+       }
+   
+       return result;
+   }
+   
+   int compare(string &s1, string &s2) {
+       int index = 0;
+       while (index < s1.size() && index < s2.size() && s1[index] != '\0' && s2[index] != '\0') {
+           if (s1[index] != s2[index]) {
+               break;
+           }
+           index += 1;
+       }
+       return s2[index] - s1[index];
+   }
+   ```
+   </details>
+3. 链表分解问题。（15 分）
+
+   **【问题描述】** 设单链表结点类型 node 定义如下：
+
+   ```c
+   struct node {
+       int data;
+       struct node *next;
+   };
+   ```
+
+   编写程序，将单链表 A 分解为两个单链表 A 和 B，其头指针分别为 head1 和 head2，使得 A 链表中含原链表 A 中序号为奇数的元素，而 B 链表中含原链表 A 中序号为偶数的元素，且保持原来的相对顺序。
+
+   <details>
+   <summary>参考答案</summary>
+
+   ```c
+   #include <iostream>
+   
+   using namespace std;
+   
+   struct node {
+       int data;
+       struct node *next;
+   };
+   
+   struct list2 {
+       node *head1;
+       node *head2;
+   };
+   
+   struct list2* fun(node *head) {
+       int index = 0;
+       node *tmp = head, *current_head_a, *current_head_b;
+       struct list2 *list = (struct list2*) malloc(sizeof(list2));
+   
+       list->head1 = nullptr;
+       list->head2 = nullptr;
+   
+       while (tmp != nullptr) {
+           if (index % 2 == 0) {
+               if (list->head2 == nullptr) {
+                   list->head2 = tmp;
+               } else {
+                   current_head_b->next = tmp;
+               }
+               current_head_b = tmp;
+           } else {
+               if (list->head1 == nullptr) {
+                   list->head1 = tmp;
+               } else {
+                   current_head_a->next = tmp;
+               }
+               current_head_a = tmp;
+           }
+           tmp = tmp->next;
+       }
+   
+       return list;
+   }
+   ```
    </details>
