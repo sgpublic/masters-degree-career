@@ -40,7 +40,9 @@ Process finished with exit code 0
 
 ## 2.2.1.2 switch 语句
 
-对于输入值可枚举的情况，可以使用 switch 语句。例如：
+对于输入值可枚举的情况，可以使用 switch 语句。
+
+switch 语句仅能使用整数类型，例如 `int`、`long` 等。
 
 ```c
 #include <stdio.h>
