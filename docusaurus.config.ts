@@ -8,7 +8,7 @@ import * as path from "node:path";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '研究生招生考试学习笔记',
+  title: '硕士生涯',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -16,12 +16,12 @@ const config: Config = {
   url: 'https://sgpublic.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/pgee/',
+  baseUrl: '/masters-degree-career/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sgpublic', // Usually your GitHub org/user name.
-  projectName: 'pgee', // Usually your repo name.
+  projectName: 'masters-degree-career', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/sgpublic/pgee/tree/main',
+          editUrl: 'https://github.com/sgpublic/masters-degree-career/tree/main',
           showLastUpdateTime: true,
           // path: 'docs/home',
           routeBasePath: '/',
@@ -123,7 +123,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '研究生招生考试学习笔记',
+      title: '硕士生涯',
       items: [
         {
           type: 'doc',
@@ -156,13 +156,7 @@ const config: Config = {
           label: '程序设计（C/C++）',
         },
         {
-          type: 'doc',
-          position: 'left',
-          docId: 'data-engineering/index',
-          label: '数据工程基础',
-        },
-        {
-          href: 'https://github.com/sgpublic/pgee',
+          href: 'https://github.com/sgpublic/masters-degree-career',
           label: 'GitHub',
           position: 'right',
         },
