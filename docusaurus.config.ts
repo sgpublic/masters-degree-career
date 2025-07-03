@@ -156,6 +156,12 @@ const config: Config = {
           label: '程序设计（C/C++）',
         },
         {
+          type: 'doc',
+          position: 'left',
+          docId: 'data-engineering/index',
+          label: '数据工程基础',
+        },
+        {
           href: 'https://github.com/sgpublic/masters-degree-career',
           label: 'GitHub',
           position: 'right',
