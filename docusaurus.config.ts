@@ -162,6 +162,12 @@ const config: Config = {
           label: '数据工程基础',
         },
         {
+          type: 'doc',
+          position: 'left',
+          docId: 'database/index',
+          label: '高级数据库系统技术',
+        },
+        {
           href: 'https://github.com/sgpublic/masters-degree-career',
           label: 'GitHub',
           position: 'right',
