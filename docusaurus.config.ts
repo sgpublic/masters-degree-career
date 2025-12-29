@@ -126,46 +126,57 @@ const config: Config = {
       title: '硕士生涯',
       items: [
         {
-          type: 'doc',
           position: 'left',
-          docId: 'politics/index',
-          label: '政治',
+          label: '初试',
+          items: [
+            {
+              type: 'doc',
+              docId: 'pre/politics/index',
+              label: '政治',
+            },
+            {
+              type: 'doc',
+              docId: 'pre/english/index',
+              label: '英语',
+            },
+            {
+              type: 'doc',
+              docId: 'pre/math/index',
+              label: '数学',
+            },
+            {
+              type: 'doc',
+              docId: 'pre/network/index',
+              label: '计算机网络',
+            },
+          ],
         },
         {
-          type: 'doc',
           position: 'left',
-          docId: 'english/index',
-          label: '英语',
+          label: '复试',
+          items: [
+            {
+              type: 'doc',
+              docId: 're/programming/index',
+              label: '程序设计（C/C++）',
+            },
+            {
+              type: 'doc',
+              docId: 're/data-engineering/index',
+              label: '数据工程基础',
+            },
+          ],
         },
         {
-          type: 'doc',
           position: 'left',
-          docId: 'math/index',
-          label: '数学',
-        },
-        {
-          type: 'doc',
-          position: 'left',
-          docId: 'network/index',
-          label: '计算机网络',
-        },
-        {
-          type: 'doc',
-          position: 'left',
-          docId: 'programming/index',
-          label: '程序设计（C/C++）',
-        },
-        {
-          type: 'doc',
-          position: 'left',
-          docId: 'data-engineering/index',
-          label: '数据工程基础',
-        },
-        {
-          type: 'doc',
-          position: 'left',
-          docId: 'database/index',
-          label: '高级数据库系统技术',
+          label: '课程',
+          items: [
+            {
+              type: 'doc',
+              docId: 'post/database/index',
+              label: '高级数据库系统技术',
+            },
+          ],
         },
         {
           href: 'https://github.com/sgpublic/masters-degree-career',
@@ -177,7 +188,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['python', 'cpp', 'c'],
+      additionalLanguages: ['python', 'cpp', 'c', 'sql'],
     },
   } satisfies Preset.ThemeConfig,
 
