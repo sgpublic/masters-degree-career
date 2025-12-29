@@ -1,5 +1,5 @@
 pages:
-  image: node:20.18.0-bookworm
+  image: node:22.16.0-bookworm
   variables:
     GIT_STRATEGY: clone
     TZ: Asia/Shanghai
