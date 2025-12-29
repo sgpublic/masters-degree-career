@@ -7,7 +7,7 @@ cd build
 
 git config --global --add safe.directory ./
 git init
-git remote add origin https://$GITLAB_USER:$GITLAB_TOKEN@$GITLAB_HOST/mhmzx/pgee.git
+git remote add origin https://$GITLAB_USER:$GITLAB_TOKEN@$GITLAB_HOST/cqupt-2025/pgee.git
 git checkout -b pages
 git add .
 git config --global user.email "bot@example.com"
