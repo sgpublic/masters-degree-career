@@ -1,8 +1,6 @@
-# 4.2 SQL语句
+# 4.2.1 数据定义（Define）
 
-## 4.2.1 数据定义（Define）
-
-### 4.2.1.1 数据类型
+## 4.2.1.1 数据类型
 
 字符串类型：
 
@@ -31,7 +29,7 @@
 + `clob`（Character Large Object）：用于存储超长文本数据。
 
 
-### 4.2.1.2 CREATE TABLE
+## 4.2.1.2 CREATE TABLE
 
 SQL 语法：
 
@@ -51,24 +49,11 @@ CREATE TABLE table_name (
 
 + `[constraint]` 为列定义的约束，例如：
 
-  + `PRIMARY KEY`
-  + `NOT NULL`
-  + `DEFAULT <value>`
-  + ...
+    + `PRIMARY KEY`
+    + `NOT NULL`
+    + `DEFAULT <value>`
+    + ...
 + `condition` 为检查约束，例如：
 
-  + `column_name in (<value1>, <value2>, ...)`
-  + ...
-
-
-## 4.2.2 数据查询（Query）
-
-
-
-## 4.2.3 数据操纵（Manipulation）
-
-
-## 4.2.4 数据控制（Control）
-
-
-
+    + `column_name in (<value1>, <value2>, ...)`
+    + ...
