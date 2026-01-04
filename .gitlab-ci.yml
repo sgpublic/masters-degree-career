@@ -7,7 +7,7 @@ pages:
     GITLAB_TOKEN: $GITLAB_TOKEN
     GITLAB_USER: $GITLAB_USER
   script:
-    - pixi run push_to_pages
+    - pixi run -e ci push_to_pages
   artifacts:
     paths:
       - build

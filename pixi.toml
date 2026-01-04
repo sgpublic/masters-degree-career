@@ -32,9 +32,17 @@ cmd = ["bash", "./scripts/push_to_pages.sh"]
 [dependencies]
 nodejs = ">=22.16.0,<23"
 python = ">=3.14.0,<3.15"
-pixi-pycharm = ">=0.0.10,<0.0.11"
-git = ">=2.52.0,<3"
 
 [pypi-dependencies]
 jieba = ">=0.42.1, <0.43"
 markdown-it-py = ">=4.0.0, <5"
+
+[feature.dev.dependencies]
+pixi-pycharm = ">=0.0.10,<0.0.11"
+
+[feature.ci.dependencies]
+git = ">=2.52.0,<3"
+
+[environments]
+ci = { features = ["ci"] }
+default =  { features = ["dev"] }
