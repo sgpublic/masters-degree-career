@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # 5.2 1NF、 2NF、 3NF
 
 ## 5.2.1 基本概念

@@ -1,5 +1,5 @@
 pages:
-  image: node:22.16.0-bookworm
+  image: ghcr.io/prefix-dev/pixi:0.62.2-bookworm
   variables:
     GIT_STRATEGY: clone
     TZ: Asia/Shanghai
@@ -7,10 +7,8 @@ pages:
     GITLAB_TOKEN: $GITLAB_TOKEN
     GITLAB_USER: $GITLAB_USER
   script:
-    - ./scripts/ci_build.sh
-    - ./scripts/push_to_pages.sh
-    - mv build public
+    - pixi run push_to_pages
   artifacts:
     paths:
-      - public
+      - build
     expire_in: 1 week

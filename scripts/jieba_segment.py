@@ -35,34 +35,35 @@ def segment_text(text):
     # Use jieba to segment text
     return list(jieba.posseg.cut(text))
 
-# Directory containing your markdown files
-markdown_directory = os.path.join(pwd, "../docs")
-output_file_path = os.path.join(pwd, "../scripts/jieba.txt")
+if __name__ == "__main__":
+    # Directory containing your markdown files
+    markdown_directory = os.path.join(pwd, "../docs")
+    output_file_path = os.path.join(pwd, "../scripts/jieba.txt")
 
-# Set to store unique (word, flag) pairs
-unique_words = defaultdict(int)
-# Open the output file in write mode
-with open(output_file_path, 'w', encoding='utf-8') as output_file:
-    # Loop through all files in the directory recursively
-    for root, dirs, files in os.walk(markdown_directory):
-        for filename in files:
-            if filename.endswith('.md'):  # Process only markdown files
-                file_path = os.path.join(root, filename)
+    # Set to store unique (word, flag) pairs
+    unique_words = defaultdict(int)
+    # Open the output file in write mode
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        # Loop through all files in the directory recursively
+        for root, dirs, files in os.walk(markdown_directory):
+            for filename in files:
+                if filename.endswith('.md'):  # Process only markdown files
+                    file_path = os.path.join(root, filename)
 
-                # Extract text from markdown (without code blocks and math)
-                text = extract_text_from_markdown(file_path)
+                    # Extract text from markdown (without code blocks and math)
+                    text = extract_text_from_markdown(file_path)
 
-                # Perform segmentation using Paddle mode
-                for word, flag in segment_text(text):
-                    if flag == 'x':
-                        continue
-                    # Add (word, flag) pair to the set to ensure uniqueness
-                    unique_words[(word, flag)] += 1
+                    # Perform segmentation using Paddle mode
+                    for word, flag in segment_text(text):
+                        if flag == 'x':
+                            continue
+                        # Add (word, flag) pair to the set to ensure uniqueness
+                        unique_words[(word, flag)] += 1
 
-                print(f"Processed {filename}")
+                    print(f"Processed {filename}")
 
-    # Write unique segmented words and their flags to the output file
-    for (word, flag), frequency in unique_words.items():
-        output_file.write('%s %s %s\n' % (word, frequency, flag))
+        # Write unique segmented words and their flags to the output file
+        for (word, flag), frequency in unique_words.items():
+            output_file.write('%s %s %s\n' % (word, frequency, flag))
 
-print(f"Segmentation complete. All output saved to {output_file_path}")
+    print(f"Segmentation complete. All output saved to {output_file_path}")
