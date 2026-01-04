@@ -132,7 +132,7 @@
    整理可得：
 
    $$
-   F'_{2}=\{A \rightarrow CD,\ B \rightarrow A,\ C \rightarrow B\}
+   F'=\{A \rightarrow CD,\ B \rightarrow A,\ C \rightarrow B\}
    $$
 
    </details>
