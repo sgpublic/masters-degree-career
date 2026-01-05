@@ -26,6 +26,10 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  markdown: {
+    mermaid: true,
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -188,7 +192,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['python', 'cpp', 'c', 'sql'],
+      additionalLanguages: ['python', 'cpp', 'c', 'sql', 'mermaid'],
     },
   } satisfies Preset.ThemeConfig,
 
@@ -221,6 +225,7 @@ const config: Config = {
         zhUserDictPath: path.resolve("./scripts/jieba.txt"),
       }),
     ],
+    '@docusaurus/theme-mermaid'
   ],
 };
 

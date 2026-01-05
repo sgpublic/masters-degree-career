@@ -1,6 +1,6 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import {useEffect} from "react";
+import {JSX, useEffect} from "react";
 import {useHistory} from "@docusaurus/router";
 
 export default function Home(): JSX.Element {
